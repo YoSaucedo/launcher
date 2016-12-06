@@ -1,0 +1,61 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: warning: using a gain-root-command while being root
+dpkg-buildpackage: info: source package drupal-console
+dpkg-buildpackage: info: source version 1.0-1
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Saucedo <saucedo.fuentes@outlook.es>
+ dpkg-source --before-build drupal-console-1.0
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh_testdir
+dh_testroot
+rm -f build-stamp
+dh_clean
+ dpkg-source -b drupal-console-1.0
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building drupal-console using existing ./drupal-console_1.0.orig.tar.gz
+dpkg-source: info: building drupal-console in drupal-console_1.0-1.debian.tar.xz
+dpkg-source: info: building drupal-console in drupal-console_1.0-1.dsc
+ debian/rules build
+dh_testdir
+touch build-stamp
+ fakeroot debian/rules binary
+dh_testdir
+dh_testroot
+rm -f build-stamp
+dh_clean
+dh_testdir
+dh_testroot
+dh_prep
+dh_installdirs
+mkdir -m 777 -p /var/drupal/Deb/Test/drupal-console-1.0/debian/drupal-console/usr/bin/
+install -m 777 /var/drupal/Deb/Test/drupal-console-1.0/drupal /var/drupal/Deb/Test/drupal-console-1.0/debian/drupal-console/usr/bin/
+chmod +x /var/drupal/Deb/Test/drupal-console-1.0/debian/drupal-console/usr/bin/
+dh_testdir
+dh_testroot
+dh_installchangelogs
+dh_installdocs
+dh_installexamples
+dh_installman
+dh_link
+dh_compress
+dh_fixperms
+dh_installdeb
+dh_gencontrol
+dpkg-gencontrol: warning: Depends field of package drupal-console: unknown substitution variable ${shlibs:Depends}
+dh_md5sums
+dh_builddeb
+dpkg-deb: building package 'drupal-console' in '../drupal-console_1.0-1_amd64.deb'.
+ dpkg-genchanges  >../drupal-console_1.0-1_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build drupal-console-1.0
+dpkg-buildpackage: info: full upload (original source is included)
+Now running lintian...
+warning: the authors of lintian do not recommend running it with root privileges!
+W: drupal-console source: missing-field-in-dep5-copyright license (paragraph at line 4)
+W: drupal-console source: missing-license-text-in-dep5-copyright GPL-2.0+ (paragraph at line 7)
+W: drupal-console: improbable-bug-number-in-closes 0200
+W: drupal-console: readme-debian-contains-debmake-template
+W: drupal-console: binary-without-manpage usr/bin/drupal
+E: drupal-console: php-script-but-no-phpX-cli-dep usr/bin/drupal
+Finished running lintian.
