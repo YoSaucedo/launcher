@@ -14,8 +14,8 @@
 # package maintainers to append LDFLAGS
 #export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
-script = $(CURDIR)/drupal.phar
-DEST1 = $(CURDIR)/debian/drupal-console/usr/bin/drupal
+script = $(CURDIR)/drupal
+DEST1 = $(CURDIR)/debian/drupal-console/usr/bin/
 
 build: build-stamp
 

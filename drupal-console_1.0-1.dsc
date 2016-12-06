@@ -10,11 +10,11 @@ Build-Depends: debhelper (>= 9)
 Package-List:
  drupal-console deb web optional arch=any
 Checksums-Sha1:
- c10a3ad2dc76d82e8ca85ab07ec8de20c4f8a081 622748 drupal-console_1.0.orig.tar.gz
- fb275e66252e1610c469bdacb60f7ee4bed26ffe 2116 drupal-console_1.0-1.debian.tar.xz
+ e53a869a2eca02f12882ca49260a10d9b9da544f 622743 drupal-console_1.0.orig.tar.gz
+ 71869d3bbf40fe58b09179501dd93efc3b452183 2148 drupal-console_1.0-1.debian.tar.xz
 Checksums-Sha256:
- dbd78d9abd7301bb6a71fae8164781ace776bc113c04624ccb7a51a0622d6db9 622748 drupal-console_1.0.orig.tar.gz
- dcdde91722ace88e3abcdbd3d1add04002b48ab8416f353d8691ffdcc8e2285e 2116 drupal-console_1.0-1.debian.tar.xz
+ b19a292fd1fa8b032c2a5af2311a9a7965fd7ba298f03358008d864e1bdcf7b4 622743 drupal-console_1.0.orig.tar.gz
+ 5bee9132b37fd351230d98477f96db5b18dc560a114b377d1889765db3e8b80d 2148 drupal-console_1.0-1.debian.tar.xz
 Files:
- 56fc11ad8245b63828e69bf6b8752b79 622748 drupal-console_1.0.orig.tar.gz
- eb077f17a67d2d3d61a04912164994af 2116 drupal-console_1.0-1.debian.tar.xz
+ b4587691d640598c5036db19190f6c3b 622743 drupal-console_1.0.orig.tar.gz
+ 97ca37b87cd66efb291f17a56a2156df 2148 drupal-console_1.0-1.debian.tar.xz
