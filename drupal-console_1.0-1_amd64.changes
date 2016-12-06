@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Tue, 06 Dec 2016 00:33:06 +0000
+Source: drupal-console
+Binary: drupal-console
+Architecture: source amd64
+Version: 1.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Saucedo <saucedo.fuentes@outlook.es>
+Changed-By: Saucedo <saucedo.fuentes@outlook.es>
+Description:
+ drupal-console - Drupal Console Launcher
+Closes: 0200
+Changes:
+ drupal-console (1.0-1) unstable; urgency=medium
+ .
+   * Initial release (Closes: #0200)
+Checksums-Sha1:
+ d73ce9128ccfb7dc774947250540ded94108ae00 857 drupal-console_1.0-1.dsc
+ c10a3ad2dc76d82e8ca85ab07ec8de20c4f8a081 622748 drupal-console_1.0.orig.tar.gz
+ fb275e66252e1610c469bdacb60f7ee4bed26ffe 2116 drupal-console_1.0-1.debian.tar.xz
+ 06ea60027ce4dc424c3c864b13069fbccf843ed1 624636 drupal-console_1.0-1_amd64.deb
+Checksums-Sha256:
+ fbf58b915e9b9208545e0037c34905aaa81d63c08439c9929398cdeab7073732 857 drupal-console_1.0-1.dsc
+ dbd78d9abd7301bb6a71fae8164781ace776bc113c04624ccb7a51a0622d6db9 622748 drupal-console_1.0.orig.tar.gz
+ dcdde91722ace88e3abcdbd3d1add04002b48ab8416f353d8691ffdcc8e2285e 2116 drupal-console_1.0-1.debian.tar.xz
+ 01be5309a11efd0cbb3948f3f24b8ddd34286c3618fe115a6f2987f8369469d3 624636 drupal-console_1.0-1_amd64.deb
+Files:
+ 8886393088ae62b29400aa4ed28ba210 857 web optional drupal-console_1.0-1.dsc
+ 56fc11ad8245b63828e69bf6b8752b79 622748 web optional drupal-console_1.0.orig.tar.gz
+ eb077f17a67d2d3d61a04912164994af 2116 web optional drupal-console_1.0-1.debian.tar.xz
+ 677c7f1612a0b0744bc852431102ceed 624636 web optional drupal-console_1.0-1_amd64.deb

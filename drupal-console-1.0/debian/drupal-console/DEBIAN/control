@@ -1,0 +1,13 @@
+Package: drupal-console
+Version: 1.0-1
+Architecture: amd64
+Maintainer: Saucedo <saucedo.fuentes@outlook.es>
+Installed-Size: 684
+Depends: php7.0
+Section: web
+Priority: optional
+Homepage: https://drupalconsole.com/
+Description: Drupal Console Launcher
+ The Drupal Console is a suite of tools run from a command line
+ interface (CLI) to generate boilerplate code and interact with
+ a Drupal 8 installation.

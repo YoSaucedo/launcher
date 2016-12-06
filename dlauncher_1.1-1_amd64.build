@@ -1,0 +1,60 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: warning: using a gain-root-command while being root
+dpkg-buildpackage: info: source package dlauncher
+dpkg-buildpackage: info: source version 1.1-1
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Saucedo <saucedo.fuentes@outlook.es>
+ dpkg-source --before-build dlauncher-1.1
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh_testdir
+dh_testroot
+rm -f build-stamp
+dh_clean
+ dpkg-source -b dlauncher-1.1
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building dlauncher using existing ./dlauncher_1.1.orig.tar.gz
+dpkg-source: info: building dlauncher in dlauncher_1.1-1.debian.tar.xz
+dpkg-source: info: building dlauncher in dlauncher_1.1-1.dsc
+ debian/rules build
+dh_testdir
+touch build-stamp
+ fakeroot debian/rules binary
+dh_testdir
+dh_testroot
+rm -f build-stamp
+dh_clean
+dh_testdir
+dh_testroot
+dh_prep
+dh_installdirs
+mkdir -m 777 -p /var/drupal/Deb/dlauncher-1.1/debian/dlauncher/usr/bin/drupal
+install -m 777 /var/drupal/Deb/dlauncher-1.1/drupal.phar /var/drupal/Deb/dlauncher-1.1/debian/dlauncher/usr/bin/drupal
+chmod +x /var/drupal/Deb/dlauncher-1.1/debian/dlauncher/usr/bin/drupal
+dh_testdir
+dh_testroot
+dh_installchangelogs
+dh_installdocs
+dh_installexamples
+dh_installman
+dh_link
+dh_compress
+dh_fixperms
+dh_installdeb
+dh_gencontrol
+dpkg-gencontrol: warning: Depends field of package dlauncher: unknown substitution variable ${shlibs:Depends}
+dh_md5sums
+dh_builddeb
+dpkg-deb: building package 'dlauncher' in '../dlauncher_1.1-1_amd64.deb'.
+ dpkg-genchanges  >../dlauncher_1.1-1_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build dlauncher-1.1
+dpkg-buildpackage: info: full upload (original source is included)
+Now running lintian...
+warning: the authors of lintian do not recommend running it with root privileges!
+W: dlauncher source: missing-field-in-dep5-copyright license (paragraph at line 4)
+W: dlauncher source: missing-license-text-in-dep5-copyright GPL-3.0+ (paragraph at line 7)
+W: dlauncher: readme-debian-contains-debmake-template
+E: dlauncher: subdir-in-usr-bin usr/bin/drupal/
+E: dlauncher: php-script-but-no-phpX-cli-dep usr/bin/drupal/drupal.phar
+Finished running lintian.
