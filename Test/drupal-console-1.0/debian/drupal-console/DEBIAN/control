@@ -2,7 +2,7 @@ Package: drupal-console
 Version: 1.0-1
 Architecture: amd64
 Maintainer: Saucedo <saucedo.fuentes@outlook.es>
-Installed-Size: 683
+Installed-Size: 684
 Depends: php7.0
 Section: web
 Priority: optional

@@ -52,10 +52,12 @@ dpkg-genchanges: info: including full source code in upload
 dpkg-buildpackage: info: full upload (original source is included)
 Now running lintian...
 warning: the authors of lintian do not recommend running it with root privileges!
+W: drupal-console source: maintainer-script-lacks-debhelper-token debian/drupal-console.postinst
 W: drupal-console source: missing-field-in-dep5-copyright license (paragraph at line 4)
 W: drupal-console source: missing-license-text-in-dep5-copyright GPL-2.0+ (paragraph at line 7)
 W: drupal-console: improbable-bug-number-in-closes 0200
 W: drupal-console: readme-debian-contains-debmake-template
 W: drupal-console: binary-without-manpage usr/bin/drupal
 E: drupal-console: php-script-but-no-phpX-cli-dep usr/bin/drupal
+W: drupal-console: maintainer-script-ignores-errors postinst
 Finished running lintian.

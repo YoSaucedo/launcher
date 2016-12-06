@@ -16,17 +16,17 @@ Changes:
  .
    * Initial release (Closes: #0200)
 Checksums-Sha1:
- 57c8625567c2386625bc4b7fcca294267fedab4b 857 drupal-console_1.0-1.dsc
+ 06c1b7eef66b7e22f3aec062aa5a095e04d61889 857 drupal-console_1.0-1.dsc
  e53a869a2eca02f12882ca49260a10d9b9da544f 622743 drupal-console_1.0.orig.tar.gz
- 1733b026bb6889187d22a35bdab1140c68269214 2108 drupal-console_1.0-1.debian.tar.xz
- de9dbe93b17354af1c754ecd9da314dbc8af5fa1 624606 drupal-console_1.0-1_amd64.deb
+ 71869d3bbf40fe58b09179501dd93efc3b452183 2148 drupal-console_1.0-1.debian.tar.xz
+ eb169b261f81e0271a259ef6492f5b8110befd4f 624652 drupal-console_1.0-1_amd64.deb
 Checksums-Sha256:
- 9934267b115dab125b0295bf2bb2d96b2330f086fdc5c6d68092eddecded0cd4 857 drupal-console_1.0-1.dsc
+ 31db809eac64abeade7d97dcbedc224c94338e376bcc8cabf6682672449d8370 857 drupal-console_1.0-1.dsc
  b19a292fd1fa8b032c2a5af2311a9a7965fd7ba298f03358008d864e1bdcf7b4 622743 drupal-console_1.0.orig.tar.gz
- 74c1336a5280c4ef6ce7f8e36178347ab0674a82a04d1a8ee7220234fb278a8d 2108 drupal-console_1.0-1.debian.tar.xz
- 990125d191b4534036cc9fe1cfce9ed1c1ead679cea490e4ec1686db54cb429e 624606 drupal-console_1.0-1_amd64.deb
+ 5bee9132b37fd351230d98477f96db5b18dc560a114b377d1889765db3e8b80d 2148 drupal-console_1.0-1.debian.tar.xz
+ 83e27acc6e5028114517d29fb9cf8c51fe4e92d169b3afd825ff03ce5051c3b4 624652 drupal-console_1.0-1_amd64.deb
 Files:
- d17c575f42f59d6ea58233c442f47c09 857 web optional drupal-console_1.0-1.dsc
+ d9420eefe5e3ee9791a6c257f7476af6 857 web optional drupal-console_1.0-1.dsc
  b4587691d640598c5036db19190f6c3b 622743 web optional drupal-console_1.0.orig.tar.gz
- c71839d0ad06eb74571fb90b453706be 2108 web optional drupal-console_1.0-1.debian.tar.xz
- 162024e2cd92b49b2adf891c5793ef81 624606 web optional drupal-console_1.0-1_amd64.deb
+ 97ca37b87cd66efb291f17a56a2156df 2148 web optional drupal-console_1.0-1.debian.tar.xz
+ 9bc8dbcb9e030bd18f4cfada5945b951 624652 web optional drupal-console_1.0-1_amd64.deb
